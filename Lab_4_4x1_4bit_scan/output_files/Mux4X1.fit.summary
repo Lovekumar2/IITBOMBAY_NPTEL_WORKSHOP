@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Jun 06 14:56:19 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Mux4X1
+Top-level Entity Name : TopLevel
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 130 / 1,270 ( 10 % )
+Total pins : 5 / 114 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

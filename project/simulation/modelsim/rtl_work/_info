@@ -1,0 +1,183 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Lab/project/simulation/modelsim
+Eencoder_4to2
+Z1 w1718301529
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8C:/Lab/project/Encoder_4to2.vhd
+Z6 FC:/Lab/project/Encoder_4to2.vhd
+l0
+L5 1
+Vi1?Ok]GjXBk;FB_>EFafz3
+!s100 8=c0Z4Kj0g0``dQ>fWHEC2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1718301847
+!i10b 1
+Z9 !s108 1718301847.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Lab/project/Encoder_4to2.vhd|
+Z11 !s107 C:/Lab/project/Encoder_4to2.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 12 encoder_4to2 0 22 i1?Ok]GjXBk;FB_>EFafz3
+!i122 0
+l13
+L12 12
+V0_mebX4Gk7o6DJSWjng_?3
+!s100 1_NfV1Vh<Ya3Edi=nD2[92
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Et1
+Z14 w1718295529
+R2
+R3
+R4
+!i122 2
+R0
+Z15 8C:/Lab/project/T1.vhd
+Z16 FC:/Lab/project/T1.vhd
+l0
+L6 1
+VWb^><4gQAZoTTEBQgE_`:0
+!s100 ffEIc?bCNzgle7f6CnHNI0
+R7
+31
+Z17 !s110 1718301848
+!i10b 1
+Z18 !s108 1718301848.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Lab/project/T1.vhd|
+Z20 !s107 C:/Lab/project/T1.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 2 t1 0 22 Wb^><4gQAZoTTEBQgE_`:0
+!i122 2
+l21
+Z21 L14 32
+Vo:M;<cXG95QO2VAhP73KO1
+!s100 LP?RJU[jMSK4Og4TJc5CD3
+R7
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Et5
+Z22 w1718295536
+R2
+R3
+R4
+!i122 3
+R0
+Z23 8C:/Lab/project/T5.vhd
+Z24 FC:/Lab/project/T5.vhd
+l0
+L6 1
+VE<UVC[Q9VG_SXm4VO8hDX0
+!s100 ;G0b9Mb36:jUIH>_khGJ60
+R7
+31
+R17
+!i10b 1
+R18
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Lab/project/T5.vhd|
+!s107 C:/Lab/project/T5.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 2 t5 0 22 E<UVC[Q9VG_SXm4VO8hDX0
+!i122 3
+l21
+R21
+V>Z9hJoI03o6LWT>EM8nE33
+!s100 bYUCE42K6Q8ND4^[jh9[A2
+R7
+31
+R17
+!i10b 1
+R18
+R25
+Z26 !s107 C:/Lab/project/T5.vhd|
+!i113 1
+R12
+R13
+Etraffic_1
+Z27 w1718301652
+R2
+R3
+R4
+!i122 1
+R0
+Z28 8C:/Lab/project/Traffic_1.vhd
+Z29 FC:/Lab/project/Traffic_1.vhd
+l0
+L5 1
+Vg:F3^ciME6UcB>nXh^]z]3
+!s100 >oj_>K3dFU3[7cnLY[JPZ3
+R7
+31
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Lab/project/Traffic_1.vhd|
+Z31 !s107 C:/Lab/project/Traffic_1.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 9 traffic_1 0 22 g:F3^ciME6UcB>nXh^]z]3
+!i122 1
+l52
+L17 163
+VkzQfFP7ZmX9=z;N91zcaH2
+!s100 BT3ogKHoZoZdcFMz4oia]1
+R7
+31
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13

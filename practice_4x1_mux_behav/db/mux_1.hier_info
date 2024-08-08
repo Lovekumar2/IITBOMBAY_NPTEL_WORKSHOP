@@ -1,0 +1,22 @@
+|DUT
+input_vector[0] => Mux_1:add_instance.s1
+input_vector[1] => Mux_1:add_instance.s0
+input_vector[2] => Mux_1:add_instance.D0
+input_vector[3] => Mux_1:add_instance.D1
+input_vector[4] => Mux_1:add_instance.D2
+input_vector[5] => Mux_1:add_instance.D3
+output_vector[0] << Mux_1:add_instance.y
+
+
+|DUT|mux_1:add_instance
+D0 => Y.DATAB
+D1 => Y.DATAA
+D2 => Y.DATAA
+D3 => Y.DATAB
+S0 => Y.OUTPUTSELECT
+S0 => process_0.IN0
+S1 => Y.OUTPUTSELECT
+S1 => process_0.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

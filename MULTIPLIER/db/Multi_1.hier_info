@@ -1,0 +1,228 @@
+|DUT
+input_vector[0] => multi_1:add_instance.a[0]
+input_vector[1] => multi_1:add_instance.a[1]
+input_vector[2] => multi_1:add_instance.a[2]
+input_vector[3] => multi_1:add_instance.a[3]
+input_vector[4] => multi_1:add_instance.a[4]
+input_vector[5] => multi_1:add_instance.a[5]
+input_vector[6] => multi_1:add_instance.a[6]
+input_vector[7] => multi_1:add_instance.a[7]
+input_vector[8] => multi_1:add_instance.m
+output_vector[0] <= multi_1:add_instance.y[0]
+output_vector[1] <= multi_1:add_instance.y[1]
+output_vector[2] <= multi_1:add_instance.y[2]
+output_vector[3] <= multi_1:add_instance.y[3]
+output_vector[4] <= multi_1:add_instance.y[4]
+output_vector[5] <= multi_1:add_instance.y[5]
+output_vector[6] <= multi_1:add_instance.y[6]
+output_vector[7] <= multi_1:add_instance.y[7]
+
+
+|DUT|Multi_1:add_instance
+a[0] => mux:inst2.I[1]
+a[0] => mux:inst3.I[0]
+a[0] => FULL_ADDER:inst9.A
+a[1] => mux:inst3.I[1]
+a[1] => mux:inst4.I[0]
+a[1] => FULL_ADDER:inst10.A
+a[2] => mux:inst4.I[1]
+a[2] => mux:inst5.I[0]
+a[2] => FULL_ADDER:inst11.A
+a[3] => mux:inst5.I[1]
+a[3] => mux:inst6.I[0]
+a[3] => FULL_ADDER:inst12.A
+a[4] => mux:inst6.I[1]
+a[4] => mux:inst7.I[0]
+a[4] => FULL_ADDER:inst13.A
+a[5] => mux:inst7.I[1]
+a[5] => mux:inst8.I[0]
+a[5] => FULL_ADDER:inst14.A
+a[6] => mux:inst8.I[1]
+a[6] => FULL_ADDER:inst15.A
+a[7] => FULL_ADDER:inst16.A
+m => mux:inst1.S
+m => mux:inst2.S
+m => mux:inst3.S
+m => mux:inst4.S
+m => mux:inst5.S
+m => mux:inst6.S
+m => mux:inst7.S
+m => mux:inst8.S
+y[0] <= FULL_ADDER:inst9.S
+y[1] <= FULL_ADDER:inst10.S
+y[2] <= FULL_ADDER:inst11.S
+y[3] <= FULL_ADDER:inst12.S
+y[4] <= FULL_ADDER:inst13.S
+y[5] <= FULL_ADDER:inst14.S
+y[6] <= FULL_ADDER:inst15.S
+y[7] <= FULL_ADDER:inst16.S
+
+
+|DUT|Multi_1:add_instance|mux:inst1
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst2
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst3
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst4
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst5
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst6
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst7
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|mux:inst8
+I[0] => y.DATAB
+I[1] => y.DATAA
+S => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst9
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst10
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst11
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst12
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst13
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst14
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst15
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Multi_1:add_instance|FULL_ADDER:inst16
+A => S.IN0
+A => C.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+B => C.IN0
+cin => S.IN1
+cin => C.IN1
+cin => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

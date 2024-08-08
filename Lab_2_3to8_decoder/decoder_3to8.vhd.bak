@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity decoder_3to8 is 
+PORT (a2,a1,a0,En: in std_logic;  y7,y6,y5,y4,y3,y2,y1,y0:out std_logic);
+
+end entity;
+
+architecture struct of decoder_3to8 is 
+component decoder_2to4 is 
+PORT (a1,a0,E: in std_logic;  y3,y2,y1,y0:out std_logic);
+
+end component;
+signal sig1,sig2,sig3:std_logic;
+ begin 
+     
+	  
+	 inst1: INVERTER port map(A => a2,Y => sig1);
+	 inst2: AND_2 port map(A => sig1,B =>En,Y => sig2);
+	 inst3: AND_2 port map(A => a2,B =>En,Y => sig3);
+	 inst4: decoder_2to4 port map(a1 => a1,a0 =>a0,E =>sig3,y3 => y7,y2 => y6,y1 => y5,y0 => y4);
+	 inst5: decoder_2to4 port map(a1 => a1,a0 =>a0,E =>sig2,y3 => y3,y2 => y2,y1 => y1,y0 => y0);
+
+
+	 
+    
+
+end architecture ;

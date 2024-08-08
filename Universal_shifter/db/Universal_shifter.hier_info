@@ -1,0 +1,370 @@
+|DUT
+input_vector[0] => Universal_shifter:add_instance.a[0]
+input_vector[1] => Universal_shifter:add_instance.a[1]
+input_vector[2] => Universal_shifter:add_instance.a[2]
+input_vector[3] => Universal_shifter:add_instance.a[3]
+input_vector[4] => Universal_shifter:add_instance.a[4]
+input_vector[5] => Universal_shifter:add_instance.a[5]
+input_vector[6] => Universal_shifter:add_instance.a[6]
+input_vector[7] => Universal_shifter:add_instance.a[7]
+input_vector[8] => Universal_shifter:add_instance.b[0]
+input_vector[9] => Universal_shifter:add_instance.b[1]
+input_vector[10] => Universal_shifter:add_instance.b[2]
+input_vector[11] => Universal_shifter:add_instance.L
+output_vector[0] << Universal_shifter:add_instance.s[0]
+output_vector[1] << Universal_shifter:add_instance.s[1]
+output_vector[2] << Universal_shifter:add_instance.s[2]
+output_vector[3] << Universal_shifter:add_instance.s[3]
+output_vector[4] << Universal_shifter:add_instance.s[4]
+output_vector[5] << Universal_shifter:add_instance.s[5]
+output_vector[6] << Universal_shifter:add_instance.s[6]
+output_vector[7] << Universal_shifter:add_instance.s[7]
+
+
+|DUT|Universal_shifter:add_instance
+a[0] => mux_2:in3_bitreversal:0:lsb:b2.I[0]
+a[0] => mux_2:in3_bitreversal:7:lsb:b2.I[1]
+a[1] => mux_2:in3_bitreversal:1:lsb:b2.I[0]
+a[1] => mux_2:in3_bitreversal:6:lsb:b2.I[1]
+a[2] => mux_2:in3_bitreversal:2:lsb:b2.I[0]
+a[2] => mux_2:in3_bitreversal:5:lsb:b2.I[1]
+a[3] => mux_2:in3_bitreversal:3:lsb:b2.I[0]
+a[3] => mux_2:in3_bitreversal:4:lsb:b2.I[1]
+a[4] => mux_2:in3_bitreversal:3:lsb:b2.I[1]
+a[4] => mux_2:in3_bitreversal:4:lsb:b2.I[0]
+a[5] => mux_2:in3_bitreversal:2:lsb:b2.I[1]
+a[5] => mux_2:in3_bitreversal:5:lsb:b2.I[0]
+a[6] => mux_2:in3_bitreversal:1:lsb:b2.I[1]
+a[6] => mux_2:in3_bitreversal:6:lsb:b2.I[0]
+a[7] => mux_2:in3_bitreversal:0:lsb:b2.I[1]
+a[7] => mux_2:in3_bitreversal:7:lsb:b2.I[0]
+b[0] => mux_2:in6_bit:0:lsb:b0.S
+b[0] => mux_2:in6_bit:1:lsb:b0.S
+b[0] => mux_2:in6_bit:2:lsb:b0.S
+b[0] => mux_2:in6_bit:3:lsb:b0.S
+b[0] => mux_2:in6_bit:4:lsb:b0.S
+b[0] => mux_2:in6_bit:5:lsb:b0.S
+b[0] => mux_2:in6_bit:6:lsb:b0.S
+b[0] => mux_2:in6_bit:7:msb:b0.S
+b[1] => mux_2:in5_bit:0:lsb:b1.S
+b[1] => mux_2:in5_bit:1:lsb:b1.S
+b[1] => mux_2:in5_bit:2:lsb:b1.S
+b[1] => mux_2:in5_bit:3:lsb:b1.S
+b[1] => mux_2:in5_bit:4:lsb:b1.S
+b[1] => mux_2:in5_bit:5:lsb:b1.S
+b[1] => mux_2:in5_bit:6:msb:b1.S
+b[1] => mux_2:in5_bit:7:msb:b1.S
+b[2] => mux_2:in4_bit:0:lsb:b2.S
+b[2] => mux_2:in4_bit:1:lsb:b2.S
+b[2] => mux_2:in4_bit:2:lsb:b2.S
+b[2] => mux_2:in4_bit:3:lsb:b2.S
+b[2] => mux_2:in4_bit:4:msb:b2.S
+b[2] => mux_2:in4_bit:5:msb:b2.S
+b[2] => mux_2:in4_bit:6:msb:b2.S
+b[2] => mux_2:in4_bit:7:msb:b2.S
+L => mux_2:in3_bitreversal:0:lsb:b2.S
+L => mux_2:in3_bitreversal:1:lsb:b2.S
+L => mux_2:in3_bitreversal:2:lsb:b2.S
+L => mux_2:in3_bitreversal:3:lsb:b2.S
+L => mux_2:in3_bitreversal:4:lsb:b2.S
+L => mux_2:in3_bitreversal:5:lsb:b2.S
+L => mux_2:in3_bitreversal:6:lsb:b2.S
+L => mux_2:in3_bitreversal:7:lsb:b2.S
+L => mux_2:in7_bitreversal:0:lsb:b2.S
+L => mux_2:in7_bitreversal:1:lsb:b2.S
+L => mux_2:in7_bitreversal:2:lsb:b2.S
+L => mux_2:in7_bitreversal:3:lsb:b2.S
+L => mux_2:in7_bitreversal:4:lsb:b2.S
+L => mux_2:in7_bitreversal:5:lsb:b2.S
+L => mux_2:in7_bitreversal:6:lsb:b2.S
+L => mux_2:in7_bitreversal:7:lsb:b2.S
+s[0] <= mux_2:in7_bitreversal:0:lsb:b2.Y
+s[1] <= mux_2:in7_bitreversal:1:lsb:b2.Y
+s[2] <= mux_2:in7_bitreversal:2:lsb:b2.Y
+s[3] <= mux_2:in7_bitreversal:3:lsb:b2.Y
+s[4] <= mux_2:in7_bitreversal:4:lsb:b2.Y
+s[5] <= mux_2:in7_bitreversal:5:lsb:b2.Y
+s[6] <= mux_2:in7_bitreversal:6:lsb:b2.Y
+s[7] <= mux_2:in7_bitreversal:7:lsb:b2.Y
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:0:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:1:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:2:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:3:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:4:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:5:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:6:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in3_bitreversal:7:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:0:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:1:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:2:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:3:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:4:msb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:5:msb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:6:msb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in4_bit:7:msb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:0:lsb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:1:lsb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:2:lsb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:3:lsb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:4:lsb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:5:lsb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:6:msb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in5_bit:7:msb:b1
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:0:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:1:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:2:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:3:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:4:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:5:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:6:lsb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in6_bit:7:msb:b0
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:0:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:1:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:2:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:3:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:4:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:5:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:6:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Universal_shifter:add_instance|mux_2:\in7_bitreversal:7:lsb:b2
+I[0] => Y.DATAB
+I[1] => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

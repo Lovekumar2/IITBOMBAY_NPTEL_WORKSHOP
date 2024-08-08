@@ -1,0 +1,228 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Lab/Lab_project/simulation/modelsim
+Eencoder_4to2
+Z1 w1718358087
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z6 8C:/Lab/Lab_project/Encoder_4to2.vhd
+Z7 FC:/Lab/Lab_project/Encoder_4to2.vhd
+l0
+L5 1
+V6[5fo6>oVmf`7m29d^MRL0
+!s100 hFH0G^;WU37fh8Ne1J72X0
+Z8 OV;C;2020.1;71
+31
+Z9 !s110 1718358723
+!i10b 1
+Z10 !s108 1718358723.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_project/Encoder_4to2.vhd|
+Z12 !s107 C:/Lab/Lab_project/Encoder_4to2.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 12 encoder_4to2 0 22 6[5fo6>oVmf`7m29d^MRL0
+!i122 3
+l13
+L12 18
+VUUD^`4NokB8JEiLCUYS6C1
+!s100 @@l;IBBo@K8hGQ>PoQ?jO3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Et1
+Z15 w1718358499
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R4
+R5
+!i122 1
+R0
+Z17 8C:/Lab/Lab_project/T1.vhd
+Z18 FC:/Lab/Lab_project/T1.vhd
+l0
+L5 1
+V3TDgl6oZSjKmf]Jb6E@YB0
+!s100 nzj:U;4N]6`fQlFP@X`_93
+R8
+31
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_project/T1.vhd|
+Z20 !s107 C:/Lab/Lab_project/T1.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R16
+R4
+R5
+DEx4 work 2 t1 0 22 3TDgl6oZSjKmf]Jb6E@YB0
+!i122 1
+l20
+Z21 L13 32
+V5P]VnaDU?0NH>WQfTVc>h0
+!s100 fG2Y]PF:Q1fJ=KnQKhmFi3
+R8
+31
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Et5
+R15
+R16
+R4
+R5
+!i122 0
+R0
+Z22 8C:/Lab/Lab_project/T5.vhd
+Z23 FC:/Lab/Lab_project/T5.vhd
+l0
+L5 1
+V_GbKU:Tmf6>INSfG@[z_E3
+!s100 Sl@WgW7loHMYE`ckiRKH70
+R8
+31
+R9
+!i10b 1
+Z24 !s108 1718358722.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_project/T5.vhd|
+Z26 !s107 C:/Lab/Lab_project/T5.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R16
+R4
+R5
+DEx4 work 2 t5 0 22 _GbKU:Tmf6>INSfG@[z_E3
+!i122 0
+l20
+R21
+VN>7]S=7=7]C9z]jY[_CC?2
+!s100 j8Y:=63oe=Z@L]UCFEdMl2
+R8
+31
+R9
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Etestbench
+Z27 w1718358088
+Z28 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R4
+R5
+!i122 4
+R0
+Z29 8C:/Lab/Lab_project/Testbench.vhdl
+Z30 FC:/Lab/Lab_project/Testbench.vhdl
+l0
+L6 1
+VjIOOAC86A[:>b47NoJOE]1
+!s100 Fh`N8R44oZoZMTeJIK@J@3
+R8
+31
+Z31 !s110 1718358724
+!i10b 1
+Z32 !s108 1718358724.000000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_project/Testbench.vhdl|
+!s107 C:/Lab/Lab_project/Testbench.vhdl|
+!i113 1
+R13
+R14
+Atest
+R28
+R4
+R5
+DEx4 work 9 testbench 0 22 jIOOAC86A[:>b47NoJOE]1
+!i122 4
+l21
+L9 29
+VX8;f9QNN]oBS1Lb2:k1Tg0
+!s100 JIc8>WMBFTcgBY7ombe]_3
+R8
+31
+R31
+!i10b 1
+R32
+R33
+Z34 !s107 C:/Lab/Lab_project/Testbench.vhdl|
+!i113 1
+R13
+R14
+Etraffic_1
+Z35 w1718358227
+R16
+R4
+R5
+!i122 2
+R0
+Z36 8C:/Lab/Lab_project/Traffic_1.vhd
+Z37 FC:/Lab/Lab_project/Traffic_1.vhd
+l0
+L5 1
+Vc6iHE_ChLLehKm5@oIXca0
+!s100 JF0W<3Z7o>XQKzFloF@mF2
+R8
+31
+R9
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_project/Traffic_1.vhd|
+Z39 !s107 C:/Lab/Lab_project/Traffic_1.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R4
+R5
+DEx4 work 9 traffic_1 0 22 c6iHE_ChLLehKm5@oIXca0
+!i122 2
+l51
+L14 223
+VVGUTUkDU8>5YSPV;U;9gf1
+!s100 >R0mg=Zk`_5Zh]V@WZ[VI3
+R8
+31
+R9
+!i10b 1
+R10
+R38
+R39
+!i113 1
+R13
+R14

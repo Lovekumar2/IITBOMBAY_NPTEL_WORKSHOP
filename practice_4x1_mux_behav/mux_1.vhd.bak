@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_1 is
+port(D0,D1,D2,D3,S0,S1:in std_logic;
+Y:out std_logic);
+architecture behavioral of mux_1 is
+begin 
+process(D0,D1,D2,D3,S0,S1)
+begin 
+if(s<='0' and s<='0') then
+y<=d0;
+if(s<='0' and s<='1') then
+y<=d1;
+if(s<='1' and s<='0') then
+y<=d2;
+if(s<='1' and s<='1') then 
+y<=d3;
+end if;
+end process;
+end behavioral;

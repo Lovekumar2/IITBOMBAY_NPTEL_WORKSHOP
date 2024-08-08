@@ -1,0 +1,24 @@
+|DUT
+input_vector[0] => AND_1:add_instance.in2
+input_vector[1] => AND_1:add_instance.in1
+output_vector[0] << AND_1:add_instance.out1
+
+
+|DUT|AND_1:add_instance
+in1 => NAND_2:inst1.A
+in2 => NAND_2:inst1.B
+out1 <= NAND_2:inst2.Y
+
+
+|DUT|AND_1:add_instance|NAND_2:inst1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AND_1:add_instance|NAND_2:inst2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

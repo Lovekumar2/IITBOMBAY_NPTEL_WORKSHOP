@@ -1,0 +1,32 @@
+|DUT
+input_vector[0] => BCD_ADDER:add_instance.B0
+input_vector[1] => BCD_ADDER:add_instance.B1
+input_vector[2] => BCD_ADDER:add_instance.B2
+input_vector[3] => BCD_ADDER:add_instance.B3
+input_vector[4] => BCD_ADDER:add_instance.A0
+input_vector[5] => BCD_ADDER:add_instance.A1
+input_vector[6] => BCD_ADDER:add_instance.A2
+input_vector[7] => BCD_ADDER:add_instance.A3
+output_vector[0] << BCD_ADDER:add_instance.s0
+output_vector[1] << BCD_ADDER:add_instance.s1
+output_vector[2] << BCD_ADDER:add_instance.s2
+output_vector[3] << BCD_ADDER:add_instance.s3
+output_vector[4] << BCD_ADDER:add_instance.Carry
+
+
+|DUT|BCD_ADDER:add_instance
+A0 => Add0.IN1
+A1 => Add0.IN2
+A2 => Add0.IN3
+A3 => Add0.IN4
+B0 => Add0.IN5
+B1 => Add0.IN6
+B2 => Add0.IN7
+B3 => Add0.IN8
+s3 <= temp.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= temp.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= temp.DB_MAX_OUTPUT_PORT_TYPE
+s0 <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= <GND>
+
+

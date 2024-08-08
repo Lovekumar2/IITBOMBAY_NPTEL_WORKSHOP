@@ -1,0 +1,100 @@
+|DUT
+input_vector[0] => Mux_3:add_instance.s1
+input_vector[1] => Mux_3:add_instance.s0
+input_vector[2] => Mux_3:add_instance.A0
+input_vector[3] => Mux_3:add_instance.A1
+input_vector[4] => Mux_3:add_instance.A2
+input_vector[5] => Mux_3:add_instance.A3
+output_vector[0] <= Mux_3:add_instance.out1
+
+
+|DUT|mux_3:add_instance
+A0 => AND_2:inst4.B
+A1 => AND_2:inst6.B
+A2 => AND_2:inst8.B
+A3 => AND_2:inst10.B
+s0 => INVERTER:inst1.A
+s0 => AND_2:inst7.A
+s0 => AND_2:inst9.A
+s1 => INVERTER:inst2.A
+s1 => AND_2:inst5.B
+s1 => AND_2:inst9.B
+out1 <= OR_2:inst13.Y
+
+
+|DUT|mux_3:add_instance|INVERTER:inst1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|INVERTER:inst2
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst6
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst7
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst8
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst9
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|AND_2:inst10
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|OR_2:inst11
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|OR_2:inst12
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_3:add_instance|OR_2:inst13
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

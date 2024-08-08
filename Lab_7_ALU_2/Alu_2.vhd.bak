@@ -1,0 +1,82 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity Alu_1 is
+port (
+A: in std_logic_vector(3 downto 0);
+B: in std_logic_vector(3 downto 0);
+op: out std_logic_vector(5 downto 0)
+) ;
+end Alu_1;
+architecture a1 of Alu_1 is
+function comp1(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+return std_logic_vector is
+-- declaring and initializing variables using aggregates
+
+begin
+   if A > B then
+            return A;
+        elsif B > A then
+            return B;
+        else
+            return "0000";
+        end if;
+return comp1;
+end comp1;
+
+
+function and1(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+return std_logic_vector is
+-- declaring and initializing variables using aggregates
+variable and_output : std_logic_vector(3 downto 0 ):=(others =>'0');
+begin
+    and_output := a and b ;
+-- Hint: Use for loop to calculate value of "diff" and "carry" variable
+-- Use aggregates to assign values to multiple bits
+return and_output;
+end and1;
+
+
+function eq1(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+return std_logic_vector is
+
+
+variable eq1 : std_logic_vector(5 downto 0 ):=(others =>'0');
+begin
+   if (A==B) then 
+ eq1:=op;
+ 
+ else
+ eq1<="0000";
+ 
+  
+-- Hint: Use for loop to calculate value of "diff" and "carry" variable
+-- Use aggregates to assign values to multiple bits
+return eq1;
+end eq1;
+
+
+begin
+alu : process( A, B )
+sig<=A3&B3;
+begin
+-- complete VHDL code for various outputs of ALU based on select lines
+-- Hint: use if/else statement
+if (sig="00" ) then
+op <= 
+
+elsif (sig="01" ) then
+ op <="000"&and_1(A,B);
+ 
+-- diff := sub(a,b); 
+ elsif (sig="10" ) then
+  op <= 
+elsif (sig = "11") then
+ op <= eq1(A,B);
+end if ; 
+ --variable_name := sub(A,B)
+--
+-- concatenate operator usage:
+-- "0000" & A
+end process ; --alu
+end a1 ; -- a1

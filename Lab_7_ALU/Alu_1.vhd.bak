@@ -1,0 +1,102 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity Alu_1 is
+port (
+A: in std_logic_vector(3 downto 0);
+B: in std_logic_vector(3 downto 0);
+sel: in std_logic_vector(1 downto 0);
+op: out std_logic_vector(7 downto 0)
+) ;
+end Alu_1;
+architecture a1 of Alu_1 is
+function sub(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+return std_logic_vector is
+-- declaring and initializing variables using aggregates
+variable diff : std_logic_vector(3 downto 0):=(others =>'0');
+variable carry: std_logic_vector(7 downto 4):=(others =>'0');
+variable a_int,b_int,bin:integer;
+begin
+a_int:= to_integer(unsigned(A));
+b_int := to_integer(unsigned(B));
+bin<='0';
+
+for i in 0 to 7 loop
+ diff:=a xor b xor bin; 
+ carry:=(not A and B) or (Bin and (not A xor B));
+ 
+
+return diff;
+end sub;
+
+
+function sub_1(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+variable concat : std_logic_vector(3 downto 0):=(others =>'0');
+begin
+ concat<=A&B;
+ return concat;
+end sub_1;
+
+
+function sub_2(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+variable xor_1 : std_logic_vector(3 downto 0):=(others =>'0');
+
+begin
+ xor_1<=A xor B;
+ return xor_1;
+ end sub_2;
+ 
+ 
+function sub_2(A: in std_logic_vector(3 downto 0); B: in std_logic_vector(3 downto 0))
+variable shifter_2 : std_logic_vector(3 downto 0):=(others =>'0');
+
+begin
+ if (b3='0') then
+ if (b(1 downto 0)="00") then 
+ shift_2:=a;
+ if(b(1 downto 0)="01") then
+ shift_2:=a;
+ if(b(1 downto 0)="10") then
+ shift_2:=a;
+ if(b(1 downto 0)="11") then
+ shift_2:=a;
+ 
+  if (b3='1') then
+ if (b(1 downto 0)="00") then 
+ shift_2:=a;
+ if(b(1 downto 0)="01") then
+ shift_2:=a;
+ if(b(1 downto 0)="10") then
+ shift_2:=a;
+ if(b(1 downto 0)="11") then
+ shift_2:=a;
+ return shifter_2;
+ end sub_2;
+ 
+ 
+begin
+alu : process( A, B, sel )
+begin
+if (sel="00") then 
+op<=sub(A,B)
+
+elsif(sel="01") then 
+op<=sub_1(A,B)
+
+elsif(sel="10") then
+op<=sub_2(A,B)
+
+elsif(sel="11") then
+op<=shifter_2(A,B)
+ 
+-- complete VHDL code for various outputs of ALU based on select lines
+-- Hint: use if/else statement
+--
+-- sub function usage :
+-- signal_name <= sub(A,B)
+-- variable_name := sub(A,B)
+--
+-- concatenate operator usage:
+-- "0000" & A
+end process ; --alu
+end a1 ; -- a1

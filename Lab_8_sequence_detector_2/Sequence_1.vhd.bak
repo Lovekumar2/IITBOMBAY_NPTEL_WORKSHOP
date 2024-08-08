@@ -1,0 +1,138 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity Sequence_1 is
+port( inp:in std_logic_vector(4 downto 0);
+reset,clock:in std_logic;
+outp: out std_logic);
+end Sequence_1;
+architecture bhv of Sequence_1 is
+---------------Define state type here-----------------------------
+type state is (rst,s1,s2,s3,s4); -- Fill other states here
+---------------Define signals of state type-----------------------
+signal y_present,y_next: state:=rst;
+signal sig1,sig2:std_logic;
+
+begin
+clock_proc:process(clock,reset)
+begin
+if(clock='1' and clock' event) then
+if(reset='1') then
+y_present<=rst;
+-- Fill the code here
+else
+y_present <= y_next;
+--outp <= '0';		
+
+-- Fill the code here
+end if;
+end if;
+end process;
+bomb_process:process(inp,y_present)
+sig1<=s1&s2&s3&s4;
+begin
+case y_present is
+when rst=>
+if(unsigned(inp)=2) then --b has been detected
+y_next<=s1;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+end if ;
+when s1=>
+if(unsigned(inp)=15) then --0 has been detected
+y_next<=s2;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+end if ;
+when s2=>
+if(unsigned(inp)=13) then --m has been detected
+y_next<=s3;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+end if ;
+when s3=>
+if(unsigned(inp)=2) then --b has been detected
+y_next<=s4;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+when others =>
+y_next <= y_present;
+
+ outp <= '0';
+end if ;
+if(unsigned(inp)=2) then --b has been detected
+y_next<=s1;
+outp <= '1';
+else 
+y_next <= y_present;
+outp <= '0';
+
+when others =>
+y_next <= y_present;
+
+ outp <= '0';
+end if ;
+end case;
+end process;
+
+
+gun_process:process(inp,y_present)
+sig2<=s1&s2&s3;
+begin
+when rst=>
+if(unsigned(inp)=7) then --g has been detected
+y_next<=s1;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+end if ;
+when s1=>
+if(unsigned(inp)=21) then --u has been detected
+y_next<=s2;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+end if ;
+when s2=>
+if(unsigned(inp)=14) then --n has been detected
+y_next<=s3;
+outp <= '0';
+else 
+y_next <= y_present;
+outp <= '0';
+end if ;
+when s3=>
+if(unsigned(inp)=7) then --g has been detected
+y_next<=s1;
+outp <= '1';
+else 
+y_next <= y_present;
+outp <= '0';
+when others =>
+y_next <= y_present;
+
+ outp <= '0';
+end if ;
+
+ outp <= '0';
+end if ;
+end case;
+end process;
+outp<=sig1 or sig2;
+
+
+end bhv;
+-------------------------
+---------Fill rest of the code here---------
+-------Similarly define output process after this which will give
+-------the output based on the present state and input (Mealy machine)

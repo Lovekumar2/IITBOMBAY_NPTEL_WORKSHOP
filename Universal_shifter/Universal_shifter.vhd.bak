@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity Universal_shifter
+   port(A0,A1,A2,A3,A4,A5,A6,A7,B0,B1,B2,L : in std_logic;
+ S0,S1,S2,S3,S4,S5,S6,S7 : out std_logic);
+end entity;
+ 
+architecture struct of Universal_shifter is
+  signal sig1, sig2,sig3,sig4,sig5,sig6,sig7 : std_logic;
+begin
+
+  in4_bit : for i in 0 to 7 generate
+lsb: if i < 4 generate
+b2: mux port map(I(0) => a(i), I(1) => a(i+4), S => b(2), Y => s(i));
+end generate lsb;
+msb: if i > 3 generate
+b2: mux port map(I(0) => a(i), I(1) => '0', S => b(2), Y => s(i));
+end generate msb;
+end generate ;
+
+ in4_bit : for i in 0 to 7 generate
+lsb: if i < 2 generate
+b1: mux port map(I(0) => a(i), I(1) => a(i+2), S => b(1), Y => s(i));
+end generate lsb;
+msb: if i > 1 generate
+b1: mux port map(I(0) => a(i), I(1) => '0', S => b(1), Y => s(i));
+end generate msb;
+end generate ;
+
+
+ in4_bit : for i in 0 to 7 generate
+lsb: if i < 1 generate
+b0: mux port map(I(0) => a(i), I(1) => a(i+1), S => b(0), Y => s(i));
+end generate lsb;
+msb: if i > 0 generate
+b0: mux port map(I(0) => a(i), I(1) => '0', S => b(0), Y => s(i));
+end generate msb;
+end generate ;
+
+  
+end architecture;

@@ -1,0 +1,8 @@
+000 00 Success
+001 10 Success
+010 10 Success
+011 01 Success
+100 10 Success
+101 01 Success
+110 01 Success
+111 11 Success

@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+-- write the Flipflops packege declaration
+entity Sequence_generator_stru_dataflow is
+port (reset,clock: in std_logic;
+y:out std_logic);
+end entity Sequence_generator_stru_dataflow;
+architecture struct of Sequence_generator_stru_dataflow is
+signal D :std_logic_vector(2 downto 0);
+signal Q:std_logic_vector(2 downto 0);
+signal:sig1,sig2,sig3,sig4,sig5,sig6,sig7,sig8,sig9,sig10,sig11,sig12,sig13:std_logic;
+
+begin
+
+inst1:se1ect_2 port map(A=> d(0),B=> clock,c=>reset,out1=>q(0));
+inst2:se1ect_2 port map(A=> d(1),B=> clock,c=>reset,out1=>q(1));
+inst3:se1ect_2 port map(A=> d(2),B=> clock,c=>reset,out1=>q(2));
+inst4:INVERTER port map(A=>Q(0),y=>sig1);--Qa-
+inst5:INVERTER port map(A=>Q(1),y=>sig2);--Qb-
+inst6:INVERTER port map(A=>Q(2),y=>sig3);--Qc-
+
+inst7:AND_2 port map(A=>q(0),B=>sig2,Y=>sig4);
+inst8:AND_2 port map(A=>sig2,B=>sig3,Y=>sig5);
+inst9:AND_2 port map(A=>q(1),B=>q(2),Y=>sig6);
+inst10:OR_2 port map(A=>sig4,B=>sig5,Y=>sig7);
+inst11:OR_2 port map(A=>sig6,B=>sig7,Y=>d(0));
+
+
+inst12:AND_2 port map(A=>q(0),B=>sig2,Y=>sig9);
+inst13:AND_2 port map(A=>q(1),B=>q(2),Y=>sig10);
+inst14:OR_2 port map(A=>sig9,B=>sig10,Y=>d(1));
+
+inst15:AND_2 port map(A=>q(0),B=>q(1),Y=>sig11);
+inst16:AND_2 port map(A=>q(1),B=>sig3,Y=>sig12);
+inst17:OR_2 port map(A=>sig11,B=>sig12,Y=>d(2));
+
+
+y<=q(2);
+
+
+
+
+
+
+
+
+--.
+end struct;

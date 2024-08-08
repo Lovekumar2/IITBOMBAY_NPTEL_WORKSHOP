@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+
+entity  mux_4bit1 is 
+PORT (a3,a2,a1,a0,sel1,sel0: in std_logic;  y0:out std_logic);
+
+end entity ;
+
+
+architecture behavirol of mux_4bit1 is 
+signal sig1:std_logic_vector(1 downto 0);
+begin 
+sig1 <= sel0&sel1;
+process(a3,a2,a1,a0,sig1)
+begin
+if (sig1 = "00") then 
+
+y0<=a0;
+elsif (sig1 = "01") then 
+
+y0<=a1;
+elsif (sig1 = "10") then 
+
+y0<=a2;
+elsif (sig1 = "11") then 
+
+y0<=a3;
+end if;
+end process;
+
+
+
+end architecture ;

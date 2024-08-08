@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Mon Jun 10 22:24:54 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : universal_shifter
+Top-level Entity Name : DUT
+Family : MAX V
+Total logic elements : 39
+Total pins : 20
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

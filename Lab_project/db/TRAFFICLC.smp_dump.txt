@@ -1,0 +1,12 @@
+
+State Machine - |TRAFFICLC|Y_Present
+Name Y_Present.S7 Y_Present.S6 Y_Present.S5 Y_Present.S4 Y_Present.S3 Y_Present.S2 Y_Present.S1 Y_Present.S0 Y_Present.rst 
+Y_Present.rst 0 0 0 0 0 0 0 0 0 
+Y_Present.S0 0 0 0 0 0 0 0 1 1 
+Y_Present.S1 0 0 0 0 0 0 1 0 1 
+Y_Present.S2 0 0 0 0 0 1 0 0 1 
+Y_Present.S3 0 0 0 0 1 0 0 0 1 
+Y_Present.S4 0 0 0 1 0 0 0 0 1 
+Y_Present.S5 0 0 1 0 0 0 0 0 1 
+Y_Present.S6 0 1 0 0 0 0 0 0 1 
+Y_Present.S7 1 0 0 0 0 0 0 0 1 

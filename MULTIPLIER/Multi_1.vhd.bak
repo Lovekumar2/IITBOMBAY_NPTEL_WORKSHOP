@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library work;
+use work.Gates.all;
+
+entity multiplication is 
+    Port (
+        a: in STD_LOGIC_VECTOR(7 downto 0);
+		
+		  m:  in STD_LOGIC;
+        y: out STD_LOGIC_VECTOR(7 downto 0)
+     
+    );
+end entity;
+
+architecture struct of multiplication is 
+component ripple_4bitadder is 
+PORT (a0,a1,a2,a3,a4,a5,a6,a7,b0,b1,b2,b3,b4,b5,b6,b7,cin1: in std_logic;  s0,s1,s2,s3,s4,s5,s6,s7,cout:out std_logic);
+
+end component;
+    signal sig1, sig2: STD_LOGIC_VECTOR(7 downto 0);
+	 signal sig3,cin1 :STD_LOGIC;
+begin
+
+  if m ='0' then 
+cin1 <= '0';
+     
+  sig1<= (a(5 downto 0) & "00");
+  
+  inst1: ripple_4bitadder port map( a0 =>a(0),a1 =>a(1),a2 =>a(2),a3 =>a(3),a4 =>a(4),a5 =>a(5),a6 =>a(6),a7 =>a(7),b0 =>sig1(0),b1 =>sig1(1),b2 =>sig1(2),
+  b3 =>sig1(3),b4 =>sig1(4) ,b5 =>sig1(5),b6 =>sig1(6),b(7)=>sig1(7),cin1 =>cin1,s0 =>y(0),s1 =>y(1),s2=>y(2),s3 =>y(3),s4 =>y(4),s5 =>y(5),s6 =>y(6),s7 =>y(7),cout =>sig3 );
+  
+  else 
+  cin1 <= '0';
+  sig2<= a(6 downto 0) & "0";
+  
+  inst2:ripple_4bitadder port map( a0 =>a(0),a1 => a(1),a2 =>a(2),a3 =>a(3),a4 =>a(4),a5 =>a(5),a6 =>a(6),a7 =>a(7),b0 =>sig2(0),b1 =>sig2(1),b 2=>sig2(2),
+  b3 =>sig2(3),b4 =>sig2(4) ,b5 =>sig2(5),b6 =>sig2(6),b(7)=>sig1(7),cin1 =>cin1,s0=>y(0),s1=>y(1),s2=>y(2),s3=>y(3),s4=>y(4),s5=>y(5),s6=>y(6),s7=>y(7),cout =>sig3 );
+  
+  end if ;
+     
+end process;
+
+end architecture;

@@ -1,0 +1,138 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Lab/practice_universal_shifter/simulation/modelsim
+Edut
+Z1 w1717650836
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Lab/practice_universal_shifter/DUT.vhdl
+Z5 FC:/Lab/practice_universal_shifter/DUT.vhdl
+l0
+L8 1
+VD1kVmifMeDYoGLV<b2Q8h1
+!s100 <dkG^P^>M>5;Em=PFLUO=0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1718038506
+!i10b 1
+Z8 !s108 1718038506.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Lab/practice_universal_shifter/DUT.vhdl|
+Z10 !s107 C:/Lab/practice_universal_shifter/DUT.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 D1kVmifMeDYoGLV<b2Q8h1
+!i122 0
+l22
+L13 17
+V^6e6930g3kM]k9VGdZGo93
+!s100 ikD<n<BnhQkba4;NdU[`e0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z13 w1717608924
+R3
+R2
+!i122 2
+R0
+Z14 8C:/Lab/practice_universal_shifter/Testbench.vhdl
+Z15 FC:/Lab/practice_universal_shifter/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z16 !s110 1718038507
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Lab/practice_universal_shifter/Testbench.vhdl|
+!s107 C:/Lab/practice_universal_shifter/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+V]CgS?:^6H2=A?f<bKc3gz1
+!s100 XcfD4@>VZZGW6F9]Wi:UR3
+R6
+31
+R16
+!i10b 1
+R8
+R17
+Z18 !s107 C:/Lab/practice_universal_shifter/Testbench.vhdl|
+!i113 1
+R11
+R12
+Euniversal_shifter
+Z19 w1718038380
+Z20 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+!i122 1
+R0
+Z22 8C:/Lab/practice_universal_shifter/shift_register.vhd
+Z23 FC:/Lab/practice_universal_shifter/shift_register.vhd
+l0
+L6 1
+Vil[>3he2f`][RVN>`cDHn2
+!s100 XJbG9Nmbk9hbD:_iKQ7Y^3
+R6
+31
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Lab/practice_universal_shifter/shift_register.vhd|
+Z25 !s107 C:/Lab/practice_universal_shifter/shift_register.vhd|
+!i113 1
+R11
+R12
+Abehavirol
+R20
+R21
+R2
+R3
+DEx4 work 17 universal_shifter 0 22 il[>3he2f`][RVN>`cDHn2
+!i122 1
+l17
+L14 42
+V;C]akb[dF@A663`ZC30@;1
+!s100 h9?hEE=9;zj9a;TS>:6d02
+R6
+31
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R11
+R12

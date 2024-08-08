@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity fibo_1 is
+port(x:in std_logic_vector(9 downto 0);
+y:out std_logic;
+end entity;
+
+architecture struct of fibo_1 is
+begin 
+process(x)
+variable a,b,fibo;
+begin 
+a=0;
+b=1;
+fibo=0;
+for i in 0 to 1023 is 
+if to_integer(unsigned(x))=fibo then
+y<='1';
+else
+y<='0'
+end if
+fibo=a+b;
+b=a;
+a=fibo;
+end for;
+end process;
+end architecture;
+
+

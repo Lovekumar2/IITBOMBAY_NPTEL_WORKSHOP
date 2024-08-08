@@ -1,0 +1,572 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Lab/Lab_4Fulladder_using_3to8decoder/simulation/modelsim
+Eand_2
+Z1 w1717394264
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Lab/Lab_4Fulladder_using_3to8decoder/Gates.vhdl
+Z5 FC:/Lab/Lab_4Fulladder_using_3to8decoder/Gates.vhdl
+l0
+L53 1
+VU7DI`Tzl@EfAQ?4z53E2F2
+!s100 1`nWBgISBZCVoBKm`L3TM3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1717669222
+!i10b 1
+Z8 !s108 1717669222.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_4Fulladder_using_3to8decoder/Gates.vhdl|
+Z10 !s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 U7DI`Tzl@EfAQ?4z53E2F2
+!i122 0
+l58
+L57 4
+Vlhgfe[LY0eM?e_R:VHaZ:1
+!s100 6Ea@T?V>e39O6cgPlk<iS0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edecoder_2to4
+Z13 w1717519094
+Z14 DPx4 work 5 gates 0 22 @eB5S<QWaBmXNA4jc;3?G2
+R2
+R3
+!i122 2
+R0
+Z15 8C:/Lab/Lab_4Fulladder_using_3to8decoder/2to4decoder.vhd
+Z16 FC:/Lab/Lab_4Fulladder_using_3to8decoder/2to4decoder.vhd
+l0
+L5 1
+VkAG9RIg5W9kBm8XS[]bfB2
+!s100 =fY@7^?zV25Qf:2z2`RDG1
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_4Fulladder_using_3to8decoder/2to4decoder.vhd|
+Z18 !s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/2to4decoder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 12 decoder_2to4 0 22 kAG9RIg5W9kBm8XS[]bfB2
+!i122 2
+l12
+L10 22
+VCG1cKXZaG[261JQgmf2eQ3
+!s100 U_PJVFlKTdzaadfHdZ;Tg1
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Edecoder_3to8
+Z19 w1717552638
+R14
+R2
+R3
+!i122 3
+R0
+Z20 8C:/Lab/Lab_4Fulladder_using_3to8decoder/decoder_3to8.vhd
+Z21 FC:/Lab/Lab_4Fulladder_using_3to8decoder/decoder_3to8.vhd
+l0
+L6 1
+ViJFh=_FB`hjhlJfZ3KO9C2
+!s100 W^h`3TC]aiKoZFnczeQ_W0
+R6
+31
+Z22 !s110 1717669223
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_4Fulladder_using_3to8decoder/decoder_3to8.vhd|
+Z24 !s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/decoder_3to8.vhd|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 12 decoder_3to8 0 22 iJFh=_FB`hjhlJfZ3KO9C2
+!i122 3
+l17
+L11 24
+VdO;hh@oWf7RNLeWl3SUG<2
+!s100 jA4oOlzChiHnAOm79I>ch3
+R6
+31
+R22
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Edut
+Z25 w1717669201
+R2
+R3
+!i122 1
+R0
+Z26 8C:/Lab/Lab_4Fulladder_using_3to8decoder/DUT.vhdl
+Z27 FC:/Lab/Lab_4Fulladder_using_3to8decoder/DUT.vhdl
+l0
+L8 1
+VKJo96^2N4BgN1=G7_AW8H0
+!s100 MWL@hAgKOieZ`eD:eC_Da0
+R6
+31
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_4Fulladder_using_3to8decoder/DUT.vhdl|
+Z29 !s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 KJo96^2N4BgN1=G7_AW8H0
+!i122 1
+l21
+L13 16
+V<LUN44RaiDD7e:=WNf`Q=2
+!s100 ?;=:C_^62fVo2MBnRA=8o3
+R6
+31
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Efull_adder_1
+Z30 w1717668737
+R14
+R2
+R3
+!i122 4
+R0
+Z31 8C:/Lab/Lab_4Fulladder_using_3to8decoder/Full_adder_1.vhd
+Z32 FC:/Lab/Lab_4Fulladder_using_3to8decoder/Full_adder_1.vhd
+l0
+L6 1
+Vgg<YTXaogQmegSaY5=H^H2
+!s100 HmiM2Nm@jQbQKlAYaV2oO3
+R6
+31
+R22
+!i10b 1
+Z33 !s108 1717669223.000000
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_4Fulladder_using_3to8decoder/Full_adder_1.vhd|
+Z35 !s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/Full_adder_1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 12 full_adder_1 0 22 gg<YTXaogQmegSaY5=H^H2
+!i122 4
+l18
+L11 30
+VKD4?Xn]hIcE4]hV;A[<i=2
+!s100 ;YQd>Z^WQNXh=:^OSnFRE2
+R6
+31
+R22
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+V@eB5S<QWaBmXNA4jc;3?G2
+!s100 N@iIgLVJlGZzK36CC:zf23
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L120 1
+VOAZ_4ioR^1B[UAcaA1zf51
+!s100 oLN8>k[AMhPS;D9;:Z@Pz0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 OAZ_4ioR^1B[UAcaA1zf51
+!i122 0
+l125
+L124 5
+VflMPld^`b]>0KKXzZhX_91
+!s100 ]f4Ql:1od=>zjRGlb:Lm:0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L41 1
+V82BXV;Uza[l3mE]`8B<HJ0
+!s100 dFc@GWJO@nF57X0IXFVfh0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 82BXV;Uza[l3mE]`8B<HJ0
+!i122 0
+l46
+L45 4
+V4]gW5EV5;RT@9C;Pga@SA0
+!s100 [DD^:ihbY=VNQeLiKKX_R1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L64 1
+VS^YD8?>b_]W^^dkQa>_3m2
+!s100 S;kgn2U384cOg4>1Kcdn<2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 S^YD8?>b_]W^^dkQa>_3m2
+!i122 0
+l69
+L68 4
+VS]`6`a7Bz3gbaB=WX@WdM2
+!s100 EBK=7IM2m_0=gIZGM@F7H1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L86 1
+V`A=6DP8fY`aBzcQ@Hgc?S1
+!s100 hCNF9lV5T>8fg2MR^]6f^0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 `A=6DP8fY`aBzcQ@Hgc?S1
+!i122 0
+l91
+L90 4
+VIJ=]C?8]dETGzmXBGe8in2
+!s100 iWUJUdMb8DJi]m^=42G9F3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L75 1
+Ve?I6M>DO0lb4QOFDA10zP2
+!s100 _]<JbSG1DCI^d;kKCeeO:3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 e?I6M>DO0lb4QOFDA10zP2
+!i122 0
+l80
+L79 4
+V35?1APMW04D0M8BcdBhJ53
+!s100 kX9QLgDQM=e4dN7zDYk6o2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z36 w1717668736
+R3
+R2
+!i122 5
+R0
+Z37 8C:/Lab/Lab_4Fulladder_using_3to8decoder/Testbench.vhdl
+Z38 FC:/Lab/Lab_4Fulladder_using_3to8decoder/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R22
+!i10b 1
+R33
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Lab/Lab_4Fulladder_using_3to8decoder/Testbench.vhdl|
+!s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+VmDgc98S8KZ_]N<>a_LTAn0
+!s100 M7S<VZ<dZ[Hl_4J:4F_R22
+R6
+31
+R22
+!i10b 1
+R33
+R39
+Z40 !s107 C:/Lab/Lab_4Fulladder_using_3to8decoder/Testbench.vhdl|
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L109 1
+VLHIUEA1`23`S5JTPo4JYA2
+!s100 M7SmBC<JLShUJ=5Tb^BGR1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 LHIUEA1`23`S5JTPo4JYA2
+!i122 0
+l114
+L113 4
+V]AR[iEm:1Y`=`f78Ab8?A2
+!s100 2L8]1Q4cBgn^[7D^6oj0;3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L98 1
+VV2P2KWfUW5e1Z=NMXBDJ;0
+!s100 DUe=@W;GH8KgEREMWIRML1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 V2P2KWfUW5e1Z=NMXBDJ;0
+!i122 0
+l103
+L102 4
+VQUFBaT6OJ>c<=2In4b:>M1
+!s100 _g>6CYjRMmc7O[`k^N;co3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

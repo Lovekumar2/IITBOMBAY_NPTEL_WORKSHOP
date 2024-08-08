@@ -1,0 +1,8 @@
+000 0 Success
+010 1 Success
+100 0 Success
+110 1 Success
+001 0 Success
+011 0 Success
+101 1 Success
+111 1 Success
